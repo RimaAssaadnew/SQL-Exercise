@@ -54,3 +54,14 @@
     INNER JOIN employees
     ON companies.Name = employees.Company
     WHERE employees.Role='Graphic Designer';
+
+/*"Count & Filter"*/
+15- SELECT name, max(points) FROM students;
+
+16- select AVG(points) as average FROM students;
+
+17- SELECT count(name) as nb_student_200 from students WHERE Points=500;
+
+18- SELECT name from students where name like '%s%';
+
+19- SELECT * FROM students ORDER by points;
