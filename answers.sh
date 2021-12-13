@@ -38,3 +38,19 @@
     WHERE Name = 'Layal';
 
 11- DELETE FROM students WHERE name='layal';
+
+/*joins 
+12- SELECT employees.Name as employe_name,companies.Name as company,companies.Date
+    FROM employees
+    INNER JOIN companies ON 
+    employees.Company = companies.Name;
+
+13- SELECT employees.Name as employees_name FROM employees 
+    INNER JOIN companies 
+    ON companies.Name = employees.Company
+    WHERE companies.Date<2000
+
+14- SELECT companies.Name as Company_name FROM companies 
+    INNER JOIN employees
+    ON companies.Name = employees.Company
+    WHERE employees.Role='Graphic Designer';
